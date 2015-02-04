@@ -1,0 +1,12 @@
+C:\Users\AlexAung\Downloads\Compressed\myanmarticket_Html_2\myanmarticket\bin\myanmarticket.dll.config
+C:\Users\AlexAung\Downloads\Compressed\myanmarticket_Html_2\myanmarticket\bin\myanmarticket.dll
+C:\Users\AlexAung\Downloads\Compressed\myanmarticket_Html_2\myanmarticket\bin\myanmarticket.pdb
+C:\Users\AlexAung\Downloads\Compressed\myanmarticket_Html_2\myanmarticket\obj\Debug\myanmarticket.csprojResolveAssemblyReference.cache
+C:\Users\AlexAung\Downloads\Compressed\myanmarticket_Html_2\myanmarticket\obj\Debug\myanmarticket.dll
+C:\Users\AlexAung\Downloads\Compressed\myanmarticket_Html_2\myanmarticket\obj\Debug\myanmarticket.pdb
+C:\Projects\MyanmarTicketService\myanmarticket\bin\myanmarticket.dll.config
+C:\Projects\MyanmarTicketService\myanmarticket\bin\myanmarticket.dll
+C:\Projects\MyanmarTicketService\myanmarticket\bin\myanmarticket.pdb
+C:\Projects\MyanmarTicketService\myanmarticket\obj\Debug\myanmarticket.csprojResolveAssemblyReference.cache
+C:\Projects\MyanmarTicketService\myanmarticket\obj\Debug\myanmarticket.dll
+C:\Projects\MyanmarTicketService\myanmarticket\obj\Debug\myanmarticket.pdb
