@@ -1,16 +1,16 @@
 $(function() {
     // This MobileServiceClient has been configured to communicate with your local
     // test project for debugging purposes.
-    //var client = new WindowsAzure.MobileServiceClient(
-    //    "http://localhost:50770"
-    //);
+    var client = new WindowsAzure.MobileServiceClient(
+        "http://localhost:50770/"
+    );
 
     // This MobileServiceClient has been configured to communicate with your Mobile Service's url
     // and application key. You're all set to start working with your Mobile Service!
-    var client = new WindowsAzure.MobileServiceClient(
-        "https://myanmarticket.azure-mobile.net/",
-        "sCIAeXGjWNEZkskobCEsOuAKEZFsXs62"
-    );
+    //var client = new WindowsAzure.MobileServiceClient(
+    //    "https://myanmarticket.azure-mobile.net/",
+    //    "sCIAeXGjWNEZkskobCEsOuAKEZFsXs62"
+    //);
     var todoItemTable = client.getTable('car');
 
     // Read current data and rebuild UI.
@@ -42,14 +42,22 @@ $(function() {
     }
 
     // Handle insert
-    $('#add-item').submit(function(evt) {
-        var textbox = $('#new-item-text'),
-            itemText = textbox.val();
-        if (itemText !== '') {
-            todoItemTable.insert({ text: itemText, complete: false }).then(refreshTodoItems, handleError);
-        }
-        textbox.val('').focus();
-        evt.preventDefault();
+    $('#add-item').submit(function (evt) {
+        bookingTable = client.getTable('booking');
+
+        bookingTable.insert({
+            code: 'BK100', BookingDate: new Date(), PaymentMode: "PayPal",
+            BookBy: { Id: "9bb9c6b3-f769-4b18-b219-925ac1c3be5d", Title: "Mr", FirstName: "FirstName", LastName: "LastName", Email: "aungmo@gmail.com", Phone: "93369204", },
+            Transfers: [{ Id: "9bb9c6b3-f769-4b18-b219-925ac1c3be5d", Service: "Arrival", FlightNo : "SQ123", From: "YGN", To: "Trader Hotel", TransferDate: new Date(), NoOfPassenger: 2, NoOfLuggage: 2 }]
+        }).then(null, handleError);
+        //var textbox = $('#new-item-text'),
+        //    itemText = textbox.val();
+        //if (itemText !== '') {
+            
+        //    todoItemTable.insert({ text: itemText, complete: false }).then(refreshTodoItems, handleError);
+        //}
+        //textbox.val('').focus();
+        //evt.preventDefault();
     });
 
     // Handle update

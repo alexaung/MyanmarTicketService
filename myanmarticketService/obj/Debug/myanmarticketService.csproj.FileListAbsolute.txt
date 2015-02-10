@@ -265,3 +265,7 @@ C:\Projects\MyanmarTicketService\myanmarticketService\bin\zh-Hant\System.Spatial
 C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.dll
 C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.pdb
 C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.csprojResolveAssemblyReference.cache
+C:\Projects\MyanmarTicketService\myanmarticketService\bin\log4net.dll
+C:\Projects\MyanmarTicketService\myanmarticketService\bin\PayPal.dll
+C:\Projects\MyanmarTicketService\myanmarticketService\bin\log4net.xml
+C:\Projects\MyanmarTicketService\myanmarticketService\bin\PayPal.xml

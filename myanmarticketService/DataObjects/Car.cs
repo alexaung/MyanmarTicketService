@@ -12,7 +12,6 @@ namespace myanmarticketService.DataObjects
         public decimal Rates { get; set; }
         public string Image { get; set; }
         public string AirportCode { get; set; }
-        public Guid AirportId { get; set; }
         public virtual AirPort Airport { get; set; }
     }
 }

@@ -1,0 +1,18 @@
+2015-02-10 20:18:59,526 [165] DEBUG PayPal.Api.OAuthTokenCredential [(null)] 
+  ClientID:       Ac9jSMVSQ4O-L5qs8zWSG9AwqYtJFgLbvXILXNRuIHD2DwuMYb3PkisWfqwGXbABrFGOjIVm_5j5k0rS
+  ClientSecret:   EN8wv-uSA3-ko06Y2OetdJwjDnTSd-goYqanbIm_8OLSyXRjXpNxtav8ngvSMOBXRdZxvX8r6lB9smIR
+  Base64ClientId: QWM5alNNVlNRNE8tTDVxczh6V1NHOUF3cVl0SkZnTGJ2WElMWE5SdUlIRDJEd3VNWWIzUGtpc1dmcXdHWGJBQnJGR09qSVZtXzVqNWswclM6RU44d3YtdVNBMy1rbzA2WTJPZXRkSndqRG5UU2QtZ29ZcWFuYkltXzhPTFN5WFJqWHBOeHRhdjhuZ3ZTTU9CWFJkWnh2WDhyNmxCOXNtSVI=
+2015-02-10 20:18:59,573 [165] DEBUG PayPal.Api.OAuthTokenCredential [(null)] Accept:*/*
+2015-02-10 20:18:59,573 [165] DEBUG PayPal.Api.OAuthTokenCredential [(null)] Content-Type:application/x-www-form-urlencoded
+2015-02-10 20:18:59,573 [165] DEBUG PayPal.Api.OAuthTokenCredential [(null)] User-Agent:PayPalSDK/PayPal-NET-SDK 1.3.1 (lang=DOTNET;v=4.5;clr=4.0.30319.34209;bit=32;os=Microsoft Windows NT 6.1.7601 Service Pack 1)
+2015-02-10 20:18:59,573 [165] DEBUG PayPal.Api.OAuthTokenCredential [(null)] Authorization:Basic QWM5alNNVlNRNE8tTDVxczh6V1NHOUF3cVl0SkZnTGJ2WElMWE5SdUlIRDJEd3VNWWIzUGtpc1dmcXdHWGJBQnJGR09qSVZtXzVqNWswclM6RU44d3YtdVNBMy1rbzA2WTJPZXRkSndqRG5UU2QtZ29ZcWFuYkltXzhPTFN5WFJqWHBOeHRhdjhuZ3ZTTU9CWFJkWnh2WDhyNmxCOXNtSVI=
+2015-02-10 20:19:00,103 [165] DEBUG PayPal.Api.HttpConnection [(null)] grant_type=client_credentials
+2015-02-10 20:19:01,749 [165] DEBUG PayPal.Api.HttpConnection [(null)] Service response: 
+2015-02-10 20:19:01,749 [165] DEBUG PayPal.Api.HttpConnection [(null)] {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/invoicing https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.*","access_token":"A0153lYWN8xPADZpCzoDEXJVDQGycx2ViProu4ZSyYgU9lU","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":28800}
+2015-02-10 20:19:01,780 [165] DEBUG PayPal.PayPalResource [(null)] Content-Type:application/json
+2015-02-10 20:19:01,780 [165] DEBUG PayPal.PayPalResource [(null)] User-Agent:PayPalSDK/PayPal-NET-SDK 1.3.1 (lang=DOTNET;v=4.5;clr=4.0.30319.34209;bit=32;os=Microsoft Windows NT 6.1.7601 Service Pack 1)
+2015-02-10 20:19:01,780 [165] DEBUG PayPal.PayPalResource [(null)] Authorization:Bearer A0153lYWN8xPADZpCzoDEXJVDQGycx2ViProu4ZSyYgU9lU
+2015-02-10 20:19:01,780 [165] DEBUG PayPal.PayPalResource [(null)] PayPal-Request-Id:4ea66f98-b9c9-48c7-8fdc-823444e7b026
+2015-02-10 20:19:02,140 [165] ERROR PayPal.Api.HttpConnection [(null)] Error response:
+2015-02-10 20:19:02,140 [165] ERROR PayPal.Api.HttpConnection [(null)] {"name":"INVALID_RESOURCE_ID","message":"The requested resource ID was not found","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#INVALID_RESOURCE_ID","debug_id":"0602f5c5dafb5"}
+2015-02-10 20:19:02,156 [165] ERROR PayPal.Api.HttpConnection [(null)] The remote server returned an error: (404) Not Found.
