@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using PayPal.Api;
+using System.Configuration;
 
 namespace myanmarticketService.Utilities
 {
@@ -19,7 +20,12 @@ namespace myanmarticketService.Utilities
         // Create the configuration map that contains mode and other optional configuration details.
         public static Dictionary<string, string> GetConfig()
         {
-            return ConfigManager.Instance.GetProperties();
+            Dictionary<string, string> configurationMap = new Dictionary<string, string>();
+            configurationMap.Add("mode", ConfigurationManager.AppSettings["mode"]);
+            configurationMap.Add("clientId", ConfigurationManager.AppSettings["clientId"]);
+            configurationMap.Add("clientSecret", ConfigurationManager.AppSettings["clientSecret"]);
+            return configurationMap;
+            //return ConfigManager.Instance.GetProperties();
         }
 
         // Create accessToken
