@@ -10,3 +10,9 @@ C:\Projects\MyanmarTicketService\myanmarticket\bin\myanmarticket.pdb
 C:\Projects\MyanmarTicketService\myanmarticket\obj\Debug\myanmarticket.csprojResolveAssemblyReference.cache
 C:\Projects\MyanmarTicketService\myanmarticket\obj\Debug\myanmarticket.dll
 C:\Projects\MyanmarTicketService\myanmarticket\obj\Debug\myanmarticket.pdb
+C:\ALEX\Project\MyanmarTicketService\myanmarticket\bin\myanmarticket.dll.config
+C:\ALEX\Project\MyanmarTicketService\myanmarticket\bin\myanmarticket.dll
+C:\ALEX\Project\MyanmarTicketService\myanmarticket\bin\myanmarticket.pdb
+C:\ALEX\Project\MyanmarTicketService\myanmarticket\obj\Debug\myanmarticket.csprojResolveAssemblyReference.cache
+C:\ALEX\Project\MyanmarTicketService\myanmarticket\obj\Debug\myanmarticket.dll
+C:\ALEX\Project\MyanmarTicketService\myanmarticket\obj\Debug\myanmarticket.pdb

@@ -98,7 +98,7 @@ namespace myanmarticketService.Controllers
                 }
             }
 
-            return CreatedAtRoute("DefaultApi", new { id = booking.Id }, booking);
+            return CreatedAtRoute("Tables", new { id = booking.Id }, booking);
         }
 
         // DELETE: api/Bookings/5

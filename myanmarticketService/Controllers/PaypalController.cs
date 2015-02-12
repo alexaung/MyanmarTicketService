@@ -12,41 +12,56 @@ using myanmarticketService.DataObjects;
 using myanmarticketService.Models;
 using myanmarticketService.Utilities;
 using PayPal.Api;
-
+using Microsoft.WindowsAzure.Mobile.Service;
 
 namespace myanmarticketService.Controllers
 {
-    public class PaypalController : ApiController
+    public class PayPalController : ApiController
     {
-        private myanmarticketContext db = new myanmarticketContext();
-        // POST: api/VerifyMobilePayment
+        private Models.myanmarticketContext db = new Models.myanmarticketContext();
+
+        // POST: api/PayPal
         [ResponseType(typeof(Booking))]
         public IHttpActionResult VerifyMobilePayment(Booking booking)
         {
-            try
+
+            var apiContext = myanmarticketService.Utilities.Configuration.GetAPIContext();
+
+            var payment = Payment.Get(apiContext, booking.PaymentId);
+
+            booking.PaymentState = payment.state;
+            
+            Booking entity = db.Bookings.Find(booking.Id);
+            db.Entry(entity).State = EntityState.Modified;
+            entity.PaymentState = payment.state;
+            db.SaveChanges();
+
+            return Ok(entity);
+            
+        }
+
+        // GET: api/Bookings/5
+        [ResponseType(typeof(Booking))]
+        public IHttpActionResult GetBooking(string id)
+        {
+
+            Booking booking = db.Bookings.Find(id);
+            if (booking == null)
             {
-                var apiContext = myanmarticketService.Utilities.Configuration.GetAPIContext();
-
-                var payment = Payment.Get(apiContext, booking.PaymentId);
-
-                booking.PaymentState = payment.state;
-
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
-
-                db.Entry(booking).State = EntityState.Modified;
-
-
-                db.SaveChanges();
+                return NotFound();
             }
-            catch (Exception e)
+
+            return Ok(booking);
+
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
             {
-                throw e;
+                db.Dispose();
             }
-
-            return CreatedAtRoute("DefaultApi", new { id = booking.Id }, booking);
+            base.Dispose(disposing);
         }
     }
 }
