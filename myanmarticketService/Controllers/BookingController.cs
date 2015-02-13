@@ -6,6 +6,7 @@ using System.Web.Http.OData;
 using Microsoft.WindowsAzure.Mobile.Service;
 using myanmarticketService.DataObjects;
 using myanmarticketService.Models;
+using myanmarticketService.Utilities;
 
 namespace myanmarticketService.Controllers
 {
@@ -39,6 +40,7 @@ namespace myanmarticketService.Controllers
         // POST tables/Booking
         public async Task<IHttpActionResult> PostBooking(Booking item)
         {
+            item.Code = KeyGenerator.GetUniqueKey();
             Booking current = await InsertAsync(item);
             return CreatedAtRoute("Tables", new { id = current.Id }, current);
         }

@@ -194,22 +194,31 @@
     <Compile Include="Controllers\BookingController.cs" />
     <Compile Include="Controllers\BookingsController.cs" />
     <Compile Include="Controllers\CarController.cs" />
+    <Compile Include="Controllers\Security\CustomLoginController.cs" />
+    <Compile Include="Controllers\Security\CustomRegistrationController.cs" />
     <Compile Include="Controllers\PayPalController.cs" />
     <Compile Include="Controllers\TodoItemController.cs" />
+    <Compile Include="DataObjects\Account.cs" />
     <Compile Include="DataObjects\AirPort.cs" />
     <Compile Include="DataObjects\Booking.cs" />
     <Compile Include="DataObjects\Car.cs" />
     <Compile Include="DataObjects\PersonalInfo.cs" />
+    <Compile Include="DataObjects\Security\RegistrationRequest.cs" />
+    <Compile Include="DataObjects\Security\LoginRequest.cs" />
     <Compile Include="DataObjects\TodoItem.cs" />
     <Compile Include="DataObjects\Transfer.cs" />
-    <Compile Include="DataObjects\User.cs" />
     <Compile Include="Models\myanmarticketContext.cs" />
     <Compile Include="ScheduledJobs\SampleJob.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\CustomLoginProviderCredentials.cs" />
     <Compile Include="Utilities\Configuration.cs" />
+    <Compile Include="Security\CustomLoginProvider.cs" />
+    <Compile Include="Security\CustomLoginProviderUtils.cs" />
+    <Compile Include="Utilities\RegexUtilities.cs" />
+    <Compile Include="Utilities\KeyGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />

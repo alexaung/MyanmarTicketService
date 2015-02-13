@@ -37,6 +37,8 @@ namespace myanmarticketService.Models
 
         public DbSet<Booking> Bookings { get; set; }
 
+        public DbSet<Account> Accounts { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             string schema = ServiceSettingsDictionary.GetSchemaName();
