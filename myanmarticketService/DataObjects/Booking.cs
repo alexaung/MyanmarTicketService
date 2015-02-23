@@ -19,6 +19,6 @@ namespace myanmarticketService.DataObjects
         [ForeignKey("Account_Id")]
         public virtual Account BookBy { get; set; }
         public virtual ICollection<Transfer> Transfers { get; set; }
-        public virtual PersonalInfo PersonalInfo { get; set; }
+        public virtual Personal Personal { get; set; }
     }
 }

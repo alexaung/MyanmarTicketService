@@ -402,3 +402,4 @@ C:\Projects\MyanmarTicketService\myanmarticketService\bin\zh-Hans\System.Spatial
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\zh-Hant\System.Spatial.resources.dll
 C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.dll
 C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.pdb
+C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.csprojResolveAssemblyReference.cache

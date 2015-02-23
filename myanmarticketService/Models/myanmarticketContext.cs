@@ -25,15 +25,14 @@ namespace myanmarticketService.Models
         {
         } 
 
-        public DbSet<TodoItem> TodoItems { get; set; }
-
+        
         public DbSet<AirPort> AirPorts { get; set; }
 
         public DbSet<Car> Cars { get; set; }
 
         public DbSet<Transfer> Transfers { get; set; }
 
-        public DbSet<PersonalInfo> PersonalInfos { get; set; }
+        public DbSet<Personal> Personals { get; set; }
 
         public DbSet<Booking> Bookings { get; set; }
 
