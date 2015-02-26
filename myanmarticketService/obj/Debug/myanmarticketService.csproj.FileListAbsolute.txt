@@ -403,3 +403,5 @@ C:\Projects\MyanmarTicketService\myanmarticketService\bin\zh-Hant\System.Spatial
 C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.dll
 C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.pdb
 C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.csprojResolveAssemblyReference.cache
+C:\ALEX\Project\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.Migrations.InitialCreate.resources
+C:\ALEX\Project\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.csproj.GenerateResource.Cache

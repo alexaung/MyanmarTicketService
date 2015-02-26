@@ -4,6 +4,7 @@ using System.Linq;
 using Microsoft.WindowsAzure.Mobile.Service;
 using Microsoft.WindowsAzure.Mobile.Service.Tables;
 using myanmarticketService.DataObjects;
+using myanmarticketService.DataObjects.BusTicket;
 
 namespace myanmarticketService.Models
 {
@@ -37,6 +38,24 @@ namespace myanmarticketService.Models
         public DbSet<Booking> Bookings { get; set; }
 
         public DbSet<Account> Accounts { get; set; }
+
+        public DbSet<State> States { get; set; }
+
+        public DbSet<City> Cities { get; set; }
+
+        public DbSet<BusType> BusTypes { get; set; }
+
+        public DbSet<ServiceProvider> ServiceProviders { get; set; }
+
+        public DbSet<Amenity> Amenities { get; set; }
+
+        public DbSet<BusImage> BusImages { get; set; }
+
+        public DbSet<BusStation> BusStations { get; set; }
+
+        public DbSet<BusSchedule> BusSchedules { get; set; }
+
+        public DbSet<BusRoute> BusRoute { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
