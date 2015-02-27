@@ -65,13 +65,62 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\app.js" />
+    <Content Include="App\Controllers\busController.js" />
+    <Content Include="App\Views\Bus\bus-payment.html" />
+    <Content Include="App\Views\Bus\bus-result.html" />
+    <Content Include="App\Views\Bus\bus-search.html" />
+    <Content Include="App\Views\Bus\bus.html" />
+    <Content Include="Content\css\flatly-bootstrap-theme.css" />
+    <Content Include="Content\css\flatly-bootstrap-theme.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\loading-bar.css" />
+    <Content Include="Content\css\loading-bar.min.css" />
+    <Content Include="Content\css\Site.css" />
+    <Content Include="Content\css\toaster.css" />
+    <Content Include="Content\css\toaster.min.css" />
     <Content Include="index.html" />
-    <Content Include="page.js" />
-    <Content Include="styles.css" />
+    <Content Include="Scripts\angular-animate.js" />
+    <Content Include="Scripts\angular-animate.min.js" />
+    <Content Include="Scripts\angular-aria.js" />
+    <Content Include="Scripts\angular-aria.min.js" />
+    <Content Include="Scripts\angular-cookies.js" />
+    <Content Include="Scripts\angular-cookies.min.js" />
+    <Content Include="Scripts\angular-loader.js" />
+    <Content Include="Scripts\angular-loader.min.js" />
+    <Content Include="Scripts\angular-messages.js" />
+    <Content Include="Scripts\angular-messages.min.js" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-resource.js" />
+    <Content Include="Scripts\angular-resource.min.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular-sanitize.js" />
+    <Content Include="Scripts\angular-sanitize.min.js" />
+    <Content Include="Scripts\angular-scenario.js" />
+    <Content Include="Scripts\angular-touch.js" />
+    <Content Include="Scripts\angular-touch.min.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\loading-bar.js" />
+    <Content Include="Scripts\loading-bar.min.js" />
+    <Content Include="Scripts\toaster.js" />
+    <Content Include="Scripts\toaster.min.js" />
+    <Content Include="Scripts\ui-bootstrap-0.12.1.js" />
+    <Content Include="Scripts\ui-bootstrap-0.12.1.min.js" />
+    <Content Include="Scripts\ui-bootstrap-tpls-0.12.1.js" />
+    <Content Include="Scripts\ui-bootstrap-tpls-0.12.1.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App\Controllers\Bus\" />
+    <Folder Include="App\Directives\" />
+    <Folder Include="App\Filters\" />
+    <Folder Include="App\Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
