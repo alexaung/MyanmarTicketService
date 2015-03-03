@@ -267,6 +267,8 @@ C:\ALEX\Project\MyanmarTicketService\myanmarticketService\bin\zh-Hant\System.Spa
 C:\ALEX\Project\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.csprojResolveAssemblyReference.cache
 C:\ALEX\Project\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.dll
 C:\ALEX\Project\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.pdb
+C:\ALEX\Project\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.Migrations.InitialCreate.resources
+C:\ALEX\Project\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.csproj.GenerateResource.Cache
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\myanmarticketService.dll.config
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\myanmarticketService.dll
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\myanmarticketService.pdb
@@ -309,12 +311,12 @@ C:\Projects\MyanmarTicketService\myanmarticketService\bin\System.Web.Http.OData.
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\System.Web.Http.Owin.dll
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\System.Web.Http.Tracing.dll
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\System.Web.Razor.dll
+C:\Projects\MyanmarTicketService\myanmarticketService\bin\EntityFramework.xml
+C:\Projects\MyanmarTicketService\myanmarticketService\bin\EntityFramework.SqlServer.xml
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\Microsoft.WindowsAzure.Mobile.Service.xml
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\Microsoft.WindowsAzure.Mobile.Service.Entity.xml
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\Microsoft.WindowsAzure.Mobile.Service.Tables.xml
-C:\Projects\MyanmarTicketService\myanmarticketService\bin\EntityFramework.xml
-C:\Projects\MyanmarTicketService\myanmarticketService\bin\EntityFramework.SqlServer.xml
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\Newtonsoft.Json.xml
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\PayPal.xml
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\System.Web.Http.xml
@@ -400,8 +402,8 @@ C:\Projects\MyanmarTicketService\myanmarticketService\bin\ko\System.Spatial.reso
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\ru\System.Spatial.resources.dll
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\zh-Hans\System.Spatial.resources.dll
 C:\Projects\MyanmarTicketService\myanmarticketService\bin\zh-Hant\System.Spatial.resources.dll
+C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.csprojResolveAssemblyReference.cache
 C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.dll
 C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.pdb
-C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.csprojResolveAssemblyReference.cache
-C:\ALEX\Project\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.Migrations.InitialCreate.resources
-C:\ALEX\Project\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.csproj.GenerateResource.Cache
+C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.Migrations.InitialCreate.resources
+C:\Projects\MyanmarTicketService\myanmarticketService\obj\Debug\myanmarticketService.csproj.GenerateResource.Cache

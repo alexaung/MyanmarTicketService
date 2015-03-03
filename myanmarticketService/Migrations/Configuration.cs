@@ -1,19 +1,17 @@
 namespace myanmarticketService.Migrations
 {
+    using myanmarticketService.DataObjects;
+    using myanmarticketService.DataObjects.BusTicket;
     using System;
-    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
-    using myanmarticketService.DataObjects;
-    using myanmarticketService.DataObjects.BusTicket;
 
     internal sealed class Configuration : DbMigrationsConfiguration<myanmarticketService.Models.myanmarticketContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "myanmarticketService.Models.myanmarticketContext";
         }
 
         protected override void Seed(myanmarticketService.Models.myanmarticketContext context)
@@ -119,8 +117,8 @@ namespace myanmarticketService.Migrations
                 new City { Id = "B7B37A1D-6DE9-4D54-AF12-B8E0AE8A94F9", State_Id = "AF4C0A10-2CA4-4087-84C0-E463F22145F6", Name = "Yangon" }
             );
 
-            context.BusTypes.AddOrUpdate(bt=> bt.Id,
-                    new BusType { Id = "2992C810-6A21-475E-A524-59B83AFFEC62", Name = "Non A/C Semi Sleeper"},
+            context.BusTypes.AddOrUpdate(bt => bt.Id,
+                    new BusType { Id = "2992C810-6A21-475E-A524-59B83AFFEC62", Name = "Non A/C Semi Sleeper" },
                     new BusType { Id = "86097E95-643B-43A0-A0BB-2482DD6B0A62", Name = "Non A/C Sleeper" },
                     new BusType { Id = "2A8471D4-6E67-4A06-9B12-1F716C15C474", Name = "A/C Semi Sleeper" },
                     new BusType { Id = "6129CBA9-278C-405B-AEA8-770887CF333B", Name = "A/C Sleeper" },

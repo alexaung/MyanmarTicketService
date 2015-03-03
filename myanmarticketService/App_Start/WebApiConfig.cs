@@ -7,7 +7,7 @@ using Microsoft.WindowsAzure.Mobile.Service;
 using myanmarticketService.DataObjects;
 using myanmarticketService.DataObjects.BusTicket;
 using myanmarticketService.Models;
-using myanmarticketService.Migrations;
+//using myanmarticketService.Migrations;
 
 namespace myanmarticketService
 {
@@ -28,8 +28,8 @@ namespace myanmarticketService
             // config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always;
             
             //Database.SetInitializer(new myanmarticketInitializer());
-            var migrator = new DbMigrator(new Configuration());
-            migrator.Update();  
+            //var migrator = new DbMigrator(new Configuration());
+            //migrator.Update();  
         }
     }
 

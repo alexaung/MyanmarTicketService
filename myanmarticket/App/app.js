@@ -1,4 +1,4 @@
-﻿var busApp = angular.module('BusTicketApp', ['ngAnimate', 'ui.router', 'ui.bootstrap', 'ui.bootstrap.datetimepicker', 'ui.bootstrap.typeahead']);
+﻿var busApp = angular.module('BusTicketApp', ['ngAnimate', 'ui.router', 'ui.bootstrap', 'ui.bootstrap.typeahead', 'mgcrea.ngStrap']);
 
 busApp.config(function ($stateProvider, $urlRouterProvider) {
     
@@ -33,5 +33,5 @@ busApp.config(function ($stateProvider, $urlRouterProvider) {
        
     // catch all route
     // send users to the form page 
-    $urlRouterProvider.otherwise('/bus/search');
+    $urlRouterProvider.otherwise('/bus');
 })
