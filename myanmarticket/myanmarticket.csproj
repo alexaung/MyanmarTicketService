@@ -70,7 +70,11 @@
     <Content Include="App\Views\Bus\bus-payment.html" />
     <Content Include="App\Views\Bus\bus-result.html" />
     <Content Include="App\Views\Bus\bus-search.html" />
+    <Content Include="App\Views\Bus\bus-step.html" />
     <Content Include="App\Views\Bus\bus.html" />
+    <Content Include="Content\css\bootstrap-combobox.css" />
+    <Content Include="Content\css\bootstrap-datetimepicker.css" />
+    <Content Include="Content\css\bootstrap-datetimepicker.min.css" />
     <Content Include="Content\css\flatly-bootstrap-theme.css" />
     <Content Include="Content\css\flatly-bootstrap-theme.min.css" />
     <Content Include="Content\css\bootstrap.css" />
@@ -103,6 +107,9 @@
     <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\bootstrap-combobox.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\loading-bar.js" />
     <Content Include="Scripts\loading-bar.min.js" />
     <Content Include="Scripts\toaster.js" />
@@ -121,6 +128,7 @@
     <Folder Include="App\Directives\" />
     <Folder Include="App\Filters\" />
     <Folder Include="App\Services\" />
+    <Folder Include="Content\images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

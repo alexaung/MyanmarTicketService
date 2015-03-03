@@ -14,14 +14,12 @@ body                            { padding-top:20px; }
 pre                             { margin-bottom:20px; }
 
 /* form styling */
-#form-container                { background:#2f2f2f; margin-bottom:20px;
-    border-radius:5px; }
-#form-container .page-header   { background:#151515; margin:0; padding:30px; 
-    border-top-left-radius:5px; border-top-right-radius:5px; }
+#form-container                { background:#ffffff; margin-bottom:20px; border-radius:5px; padding:30px;}
+#form-container .page-header   { background:#151515; margin:0; padding:30px; border-top-left-radius:5px; border-top-right-radius:5px; }
 
 /* numbered buttons */
 #status-buttons                 {  }
-#status-buttons a               { color:#FFF; display:inline-block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; }
+#status-buttons a               { color:#eb1564; display:inline-block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; }
 #status-buttons a:hover         { text-decoration:none; }
 #status-buttons span            { background:#080808; display:block; height:30px; margin:0 auto 10px; padding-top:5px; width:30px; 
     border-radius:50%; }
@@ -79,4 +77,25 @@ pre                             { margin-bottom:20px; }
 @-webkit-keyframes slideInRight {
     from    { -webkit-transform:translateX(200%); }
     to      { -webkit-transform: translateX(0); }
+}
+
+
+/* J*/
+#jumbobg {
+  background-image: url('http://i.imgur.com/vJN3bFJ.jpg');
+  background-repeat:  no-repeat;
+  background-position: center 35%;
+  background-size: 100% 960px;
+}
+
+.navbar {
+position: relative;
+min-height: 60px;
+margin-bottom: 0px;
+border: 0px solid transparent;
+}
+
+.form-group {
+margin-bottom: 15px;
+padding: 15px;
 }

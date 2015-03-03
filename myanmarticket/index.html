@@ -4,9 +4,12 @@
     <title>Myanmar Bus Ticket Booking</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/css/flatly-bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="https://rawgit.com/dalelotts/angular-bootstrap-datetimepicker/master/src/css/datetimepicker.css" rel="stylesheet" />
     <link href="Content/css/toaster.css" rel="stylesheet" />
-    <link href="content/css/loading-bar.min.css" rel="stylesheet" />
-    <link href="content/css/site.css" rel="stylesheet" />
+    <link href="Content/css/loading-bar.min.css" rel="stylesheet" />
+    <link href="Content/css/bootstrap-combobox.css" rel="stylesheet" />
+    
+    <link href="Content/css/site.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link href="favicon.ico" rel="shortcut icon" />
 </head>
@@ -26,7 +29,7 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#/bus/search">Buses <span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="#/bus">Buses <span class="sr-only">(current)</span></a></li>
                         <li><a href="#/airportshuttle">Airport Shuttle</a></li>
                         <li><a href="#/carrental">Car Rental</a></li>
                         <li><a href="#/tourpackage">Tour Package</a></li>
@@ -38,32 +41,47 @@
                 </div>
             </div>
         </nav>
-        <section id="body" class="container">
-            <div data-ng-view=""></div>
-        </section>
-        <hr />
+        <div class="jumbotron" id="jumbobg">
+            <section id=" body" class="container">
+                <div ui-view=""></div>
+            </section>
+            <hr />
+        </div>
 
-
-        <footer class="footer">
-            <div class="container">
-                <p class="text-muted">© Copyright 2005-2015 <a href="http://www.takemetomyanmar.com" target="_blank">TakeMeToMyanamr.Com</a> Pte Ltd. All Rights Reserved.</p>
+        <div class="container">
+            <div class="jumbotron">
+                <!--<h1>YOU THINK TRAVEL. WE MAKE IT COME TRUE</h1>-->
+                <p>TakeMeToMyanmar.com is Myanmar’s largest online bus ticketing platform. We connect over 100+ routes across 10+ bus operators in the country and have sold over 3 Crore bus tickets on the web, mobile, call center and through our agents.</p>
+                <p><a class="btn btn-primary btn-lg">Learn more</a></p>
             </div>
-        </footer>
-    </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <p class="text-muted">© Copyright 2005-2015 <a href="http://www.takemetomyanmar.com" target="_blank">TakeMeToMyanamr.Com</a> Pte Ltd. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
 </body>
 </html>
 <!-- 3rd party libraries -->
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-resource.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.min.js"></script>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap.min.js"></script>
+<script type="text/javascript" src="//rawgit.com/dalelotts/angular-bootstrap-datetimepicker/master/src/js/datetimepicker.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap-tpls.min.js"></script>
+
 <script type="text/javascript" src="scripts/toaster.js"></script>
 <script type="text/javascript" src="scripts/loading-bar.min.js"></script>
+<script type="text/javascript" src="scripts/bootstrap-combobox.js"></script>
+
 
 <!-- Load app main script -->
 <script src="app/app.js"></script>
@@ -72,3 +90,7 @@
 
 <!-- Load controllers -->
 <script src="app/controllers/busController.js"></script>
+
+<script type="text/javascript">
+    $(".form_datetime").datetimepicker({ format: 'yyyy-mm-dd hh:ii' });
+</script> 

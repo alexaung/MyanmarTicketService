@@ -1,4 +1,4 @@
-﻿var busApp = angular.module('BusTicketApp', ['ngAnimate', 'ui.router']);
+﻿var busApp = angular.module('BusTicketApp', ['ngAnimate', 'ui.router', 'ui.bootstrap', 'ui.bootstrap.datetimepicker', 'ui.bootstrap.typeahead']);
 
 busApp.config(function ($stateProvider, $urlRouterProvider) {
     
