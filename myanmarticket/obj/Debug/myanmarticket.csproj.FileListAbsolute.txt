@@ -20,3 +20,7 @@ C:\Projects\MyanmarTicketService\myanmarticket\bin\EntityFramework.dll
 C:\Projects\MyanmarTicketService\myanmarticket\bin\EntityFramework.SqlServer.dll
 C:\Projects\MyanmarTicketService\myanmarticket\bin\EntityFramework.xml
 C:\Projects\MyanmarTicketService\myanmarticket\bin\EntityFramework.SqlServer.xml
+C:\ALEX\Project\MyanmarTicketService\myanmarticket\bin\EntityFramework.dll
+C:\ALEX\Project\MyanmarTicketService\myanmarticket\bin\EntityFramework.SqlServer.dll
+C:\ALEX\Project\MyanmarTicketService\myanmarticket\bin\EntityFramework.xml
+C:\ALEX\Project\MyanmarTicketService\myanmarticket\bin\EntityFramework.SqlServer.xml

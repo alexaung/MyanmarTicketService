@@ -1,17 +1,66 @@
-﻿<div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" class="form-control" name="name" ng-model="formData.name">
-</div>
+﻿
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
 
-<div class="form-group">
-    <label for="email">Email</label>
-    <input type="text" class="form-control" name="email" ng-model="formData.email">
-</div>
+            <div id="form-container">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <legend>Book Bus Tickets Online</legend>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="name">From</label>
+                                    <div class="input-group">
+                                        <input type="text" ng-model="formData.selectedFrom" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:8" class="form-control" placeholder="Enter a city">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-th-list"></span></span>
+                                    </div>
+                                </div>
+                            </div>
 
-<div class="form-group row">
-    <div class="col-xs-6 col-xs-offset-3">
-        <a ui-sref="bus.result" class="btn btn-block btn-info">
-            Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
-        </a>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="name">To</label>
+                                    <div class="input-group">
+                                        <input type="text" ng-model="formData.selectedTo" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:8" class="form-control" placeholder="Enter a city">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-th-list"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="name">Date of Journey</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" ng-model="formData.DepartDate" data-date-format="dd-MMM-yyyy" data-date-type="number" data-min-date="today" data-max-date="{{formData.DepartDate}}" placeholder="dd-MMM-yyyy" bs-datepicker>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="name">Date of Return (Optional)</label>                                    
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" ng-model="formData.ReturnDate" data-date-format="dd-MMM-yyyy" data-date-type="number" data-min-date="{{formData.ReturnDate}}" placeholder="dd-MMM-yyyy" bs-datepicker>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <div class="col-md-6 col-sm-6 col-xs-offset-3">
+                                <a href="#/bus/select" class="btn btn-block btn-info">
+                                    Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </div>
-</div>
+<pre>
+                {{ formData }}
+              </pre>

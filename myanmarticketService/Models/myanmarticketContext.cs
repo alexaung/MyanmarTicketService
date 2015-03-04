@@ -55,7 +55,7 @@ namespace myanmarticketService.Models
 
         public DbSet<BusSchedule> BusSchedules { get; set; }
 
-        public DbSet<BusRoute> BusRoute { get; set; }
+        public DbSet<BusRoute> BusRoutes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

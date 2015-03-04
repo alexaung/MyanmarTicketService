@@ -81,10 +81,10 @@
     <Content Include="App\app.js" />
     <Content Include="App\Controllers\busController.js" />
     <Content Include="App\Views\Bus\bus-payment.html" />
-    <Content Include="App\Views\Bus\bus-result.html" />
-    <Content Include="App\Views\Bus\bus-search.html" />
-    <Content Include="App\Views\Bus\bus-step.html" />
+    <Content Include="App\Views\Bus\bus-select.html" />
+    <Content Include="App\Views\Bus\bus-selectbus.html" />
     <Content Include="App\Views\Bus\bus.html" />
+    <Content Include="App\Views\Bus\bus-search.html" />
     <Content Include="Content\css\bootstrap-combobox.css" />
     <Content Include="Content\css\daterangepicker-bs3.css" />
     <Content Include="Content\css\flatly-bootstrap-theme.css" />

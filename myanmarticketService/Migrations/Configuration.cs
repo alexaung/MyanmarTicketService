@@ -127,6 +127,40 @@ namespace myanmarticketService.Migrations
                     new BusType { Id = "EB07AC09-84B9-4DA4-B734-21A37FC3E1AB", Name = "Volvo A/C Multi Axle SemiSleeper" },
                     new BusType { Id = "5613B02D-D364-4865-AA3F-FE68AB5D3A71", Name = "Mercedes Multi-Axle Semi-sleeper" }
                 );
+
+            context.BusStations.AddOrUpdate(bs => bs.Id,
+                new BusStation { Id = "FBC3CD07-5C71-4954-8EF7-F5865A3948D3", Name = "Aung Mingalar Bus Station" },
+                new BusStation { Id = "BA925A50-EC38-424E-9597-ABCB5F74F4D6", Name = " Monywa Highway Bus Station" }
+                
+                );
+
+            context.ServiceProviders.AddOrUpdate(sp => sp.Id,
+                new ServiceProvider { Id = "E0E0E7F9-F7FD-4AF4-B37C-672A6AA1DA42", Name = "TakeMeToMyanmr Pte Ltd", Email = "info@takemetomyanmar.com", Mobile = "(+95)926 153 7773", ContactPersonName = "Thi Han Lin", ContactNumber = "(+95)926 153 7773" });
+
+            context.BusRoutes.AddOrUpdate(br => br.Id,
+                new BusRoute
+                {
+                    Id = "B3DDDB9A-BC8A-46AB-AA6A-3313694D2806",
+                    Name = "Moe Kaung Kin",
+                    BusType_Id = "6129CBA9-278C-405B-AEA8-770887CF333B",
+                    FromCity_Id = "B7B37A1D-6DE9-4D54-AF12-B8E0AE8A94F9",
+                    ToCity_Id = "4BAFE41D-B88A-487A-8429-F4FAC9498B1C",
+                    BoardingPoint_Id = "FBC3CD07-5C71-4954-8EF7-F5865A3948D3",
+                    DroppingPoint_Id = "BA925A50-EC38-424E-9597-ABCB5F74F4D6",
+                    Seats = 10,
+                    Fare = 13,
+                    DayOfWeek = 127
+                });
+
+            context.BusSchedules.AddOrUpdate(bsc => bsc.Id,
+                new BusSchedule { Id = "F9F2BD13-0D39-482B-A567-4E5F20E39CF2", DepartureTime = "9:00 AM", ArrivalTime = "11:00 PM", BusRoute_Id = "B3DDDB9A-BC8A-46AB-AA6A-3313694D2806" },
+                new BusSchedule { Id = "6B166FB8-45AB-4E49-B42C-CE58B952AD2A", DepartureTime = "8:00 AM", ArrivalTime = "07:00 PM", BusRoute_Id = "B3DDDB9A-BC8A-46AB-AA6A-3313694D2806" }
+                );
+
+            context.BusImages.AddOrUpdate(bi => bi.Id,
+                new BusImage { Id = "35573EA2-C3BD-4C3E-A75A-2E88C8B4ADF0", Name = "B3DDDB9A-BC8A-46AB-AA6A-3313694D2806_1.jpg", BusRoute_Id = "B3DDDB9A-BC8A-46AB-AA6A-3313694D2806" }
+                );
+
         }
     }
 }
