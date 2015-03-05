@@ -150,17 +150,32 @@ namespace myanmarticketService.Migrations
                     Seats = 10,
                     Fare = 13,
                     DayOfWeek = 127
+                }, 
+                new BusRoute
+                {
+                    Id = "DAB6C4EE-6877-4606-BBB9-EB379B64D2F3",
+                    Name = "Moe Kaung Kin",
+                    BusType_Id = "6129CBA9-278C-405B-AEA8-770887CF333B",
+                    FromCity_Id = "B7B37A1D-6DE9-4D54-AF12-B8E0AE8A94F9",
+                    ToCity_Id = "578D9AB3-C49F-4FE3-B3D8-9CDFB78EB27A",
+                    BoardingPoint_Id = "FBC3CD07-5C71-4954-8EF7-F5865A3948D3",
+                    DroppingPoint_Id = "BA925A50-EC38-424E-9597-ABCB5F74F4D6",
+                    Seats = 10,
+                    Fare = 14,
+                    DayOfWeek = 127
                 });
 
             context.BusSchedules.AddOrUpdate(bsc => bsc.Id,
                 new BusSchedule { Id = "F9F2BD13-0D39-482B-A567-4E5F20E39CF2", DepartureTime = "9:00 AM", ArrivalTime = "11:00 PM", BusRoute_Id = "B3DDDB9A-BC8A-46AB-AA6A-3313694D2806" },
-                new BusSchedule { Id = "6B166FB8-45AB-4E49-B42C-CE58B952AD2A", DepartureTime = "8:00 AM", ArrivalTime = "07:00 PM", BusRoute_Id = "B3DDDB9A-BC8A-46AB-AA6A-3313694D2806" }
+                new BusSchedule { Id = "6B166FB8-45AB-4E49-B42C-CE58B952AD2A", DepartureTime = "8:00 AM", ArrivalTime = "07:00 PM", BusRoute_Id = "B3DDDB9A-BC8A-46AB-AA6A-3313694D2806" },
+
+                new BusSchedule { Id = "A05D194E-B4FB-4962-A27A-26883C606850", DepartureTime = "5:00 PM", ArrivalTime = "04:00 AM", BusRoute_Id = "DAB6C4EE-6877-4606-BBB9-EB379B64D2F3" }
                 );
 
             context.BusImages.AddOrUpdate(bi => bi.Id,
-                new BusImage { Id = "35573EA2-C3BD-4C3E-A75A-2E88C8B4ADF0", Name = "B3DDDB9A-BC8A-46AB-AA6A-3313694D2806_1.jpg", BusRoute_Id = "B3DDDB9A-BC8A-46AB-AA6A-3313694D2806" }
+                new BusImage { Id = "35573EA2-C3BD-4C3E-A75A-2E88C8B4ADF0", Name = "B3DDDB9A-BC8A-46AB-AA6A-3313694D2806_1.jpg", BusRoute_Id = "B3DDDB9A-BC8A-46AB-AA6A-3313694D2806" },
+                new BusImage { Id = "625090B7-9822-4816-B0F2-2E897C13280D", Name = "DAB6C4EE-6877-4606-BBB9-EB379B64D2F3_1.jpg", BusRoute_Id = "DAB6C4EE-6877-4606-BBB9-EB379B64D2F3" }
                 );
-
         }
     }
 }

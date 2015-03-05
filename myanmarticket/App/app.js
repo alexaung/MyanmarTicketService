@@ -1,4 +1,6 @@
-﻿var busApp = angular.module('BusTicketApp', ['ngAnimate', 'ui.router', 'ui.bootstrap', 'ui.bootstrap.typeahead', 'mgcrea.ngStrap', 'azure-mobile-service.module']);
+﻿'use strict';
+
+var busApp = angular.module('BusTicketApp', ['ngAnimate', 'ui.router', 'ui.bootstrap', 'ui.bootstrap.typeahead', 'mgcrea.ngStrap', 'azure-mobile-service.module']);
 
 busApp.config(function ($stateProvider, $urlRouterProvider) {
 
@@ -29,7 +31,8 @@ busApp.config(function ($stateProvider, $urlRouterProvider) {
         // url will be nested (/bus/select)
         .state('bus.select', {
             url: '/select',
-            templateUrl: '/app/views/bus/bus-select.html'
+            templateUrl: '/app/views/bus/bus-select.html',
+            controller: 'busResultController'
         })
 
         // url will be /bus/custinfo
@@ -49,8 +52,8 @@ busApp.config(function ($stateProvider, $urlRouterProvider) {
     // send users to the form page 
     $urlRouterProvider.otherwise('/bussearch');
 });
-
+////'https://myanmarticket.azure-mobile.net/',
 busApp.constant('AzureMobileServiceClient', {
-    API_URL: 'https://myanmarticket.azure-mobile.net/',
+    API_URL: 'http://localhost:50770', 
     API_KEY: 'sCIAeXGjWNEZkskobCEsOuAKEZFsXs62'
 });

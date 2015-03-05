@@ -63,6 +63,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Controllers\busResultController.js" />
+    <Content Include="App\Services\busDataService.js" />
     <Content Include="Content\css\bootstrap-datepicker.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
@@ -144,7 +146,6 @@
     <Folder Include="App\Controllers\Bus\" />
     <Folder Include="App\Directives\" />
     <Folder Include="App\Filters\" />
-    <Folder Include="App\Services\" />
     <Folder Include="Content\images\" />
   </ItemGroup>
   <PropertyGroup>

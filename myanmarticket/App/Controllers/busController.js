@@ -1,7 +1,7 @@
 ﻿'use strict';
-busApp.controller('busController', function ($scope, Azureservice) {
+busApp.controller('busController', function ($scope, Azureservice, DataService) {
     // we will store all of our form data in this object
-    $scope.formData = {};
+    $scope.criteria = DataService.criteria;
 
     // function to process the form
     $scope.processForm = function () {
@@ -17,7 +17,14 @@ busApp.controller('busController', function ($scope, Azureservice) {
     getCities();
 
     function getCities() {
-        Azureservice.query('City', {})
+        Azureservice.query('City', {
+            orderBy: [
+                {
+                    column: 'name',
+                    direction: 'asc'
+                }
+            ]
+        })
         .then(function (items) {
             // Assigin the results to a $scope variable 
             $scope.cities = items;

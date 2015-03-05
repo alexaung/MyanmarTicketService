@@ -194,6 +194,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AirPortController.cs" />
     <Compile Include="Controllers\BookingController.cs" />
+    <Compile Include="Controllers\BusTicket\BusController.cs" />
+    <Compile Include="Controllers\BusTicket\BusRoutesController.cs" />
     <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\BusTicket\CityController.cs" />
     <Compile Include="Controllers\Security\CustomLoginController.cs" />
@@ -204,10 +206,12 @@
     <Compile Include="DataObjects\Booking.cs" />
     <Compile Include="DataObjects\BusTicket\Amenity.cs" />
     <Compile Include="DataObjects\BusTicket\BusImage.cs" />
+    <Compile Include="DataObjects\BusTicket\BusResult.cs" />
     <Compile Include="DataObjects\BusTicket\BusSchedule.cs" />
     <Compile Include="DataObjects\BusTicket\BusStation.cs" />
     <Compile Include="DataObjects\BusTicket\City.cs" />
     <Compile Include="DataObjects\BusTicket\BusRoute.cs" />
+    <Compile Include="DataObjects\BusTicket\SearchCriteria.cs" />
     <Compile Include="DataObjects\BusTicket\ServiceProvider.cs" />
     <Compile Include="DataObjects\BusTicket\State.cs" />
     <Compile Include="DataObjects\BusTicket\BusType.cs" />

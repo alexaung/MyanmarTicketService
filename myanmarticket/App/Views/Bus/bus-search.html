@@ -10,20 +10,22 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <label for="name">From</label>
-                                    <div class="input-group">
-                                        <input type="text" ng-model="formData.selectedFrom" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:8" class="form-control" placeholder="Enter a city">
+                                    <input type="text" ng-model="criteria.FromCity" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:10" class="form-control" placeholder="Enter a city">
+                                    <!--<div class="input-group">
+                                        <input type="text" ng-model="criteria.selectedFrom" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:8" class="form-control" placeholder="Enter a city">
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-th-list"></span></span>
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
 
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <label for="name">To</label>
-                                    <div class="input-group">
-                                        <input type="text" ng-model="formData.selectedTo" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:8" class="form-control" placeholder="Enter a city">
+                                    <input type="text" ng-model="criteria.ToCity" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:8" class="form-control" placeholder="Enter a city">
+                                    <!--<div class="input-group">
+                                        <input type="text" ng-model="criteria.selectedTo" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:8" class="form-control" placeholder="Enter a city">
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-th-list"></span></span>
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -33,8 +35,12 @@
                                 <div class="form-group">
                                     <label for="name">Date of Journey</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" ng-model="formData.DepartDate" data-date-format="dd-MMM-yyyy" data-date-type="number" data-min-date="today" data-max-date="{{formData.DepartDate}}" placeholder="dd-MMM-yyyy" bs-datepicker>
-                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        <input id="departDate" type="text" class="form-control" ng-model="criteria.DepartDate" data-date-format="dd-MMM-yyyy" data-date-type="number" data-min-date="today" data-max-date="{{criteria.DepartDate}}" placeholder="dd-MMM-yyyy" bs-datepicker>
+                                        <span class="input-group-btn">
+                                            <label class="btn btn-default" for="departDate">
+                                                <i class="glyphicon glyphicon-calendar"></i>
+                                            </label>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -42,8 +48,12 @@
                                 <div class="form-group">
                                     <label for="name">Date of Return (Optional)</label>                                    
                                     <div class="input-group">
-                                        <input type="text" class="form-control" ng-model="formData.ReturnDate" data-date-format="dd-MMM-yyyy" data-date-type="number" data-min-date="{{formData.ReturnDate}}" placeholder="dd-MMM-yyyy" bs-datepicker>
-                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        <input id="returnDate" type="text" class="form-control" ng-model="criteria.ReturnDate" data-date-format="dd-MMM-yyyy" data-date-type="number" data-min-date="{{criteria.ReturnDate}}" placeholder="dd-MMM-yyyy" bs-datepicker>
+                                        <span class="input-group-btn">
+                                            <label class="btn btn-default" for="returnDate">
+                                                <i class="glyphicon glyphicon-calendar"></i>
+                                            </label>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -62,5 +72,5 @@
         </div>
     </div>
 <pre>
-                {{ formData }}
+                {{ criteria }}
               </pre>
