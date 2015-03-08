@@ -8,7 +8,7 @@ using Microsoft.WindowsAzure.Mobile.Service;
 
 namespace myanmarticketService.DataObjects.BusTicket
 {
-    public class BusSchedule : EntityData
+    public class BusSchedule : CustomEntityData
     {
         public string DepartureTime { get; set; }
         public string ArrivalTime { get; set; }

@@ -3,7 +3,7 @@ using Microsoft.WindowsAzure.Mobile.Service;
 
 namespace myanmarticketService.DataObjects
 {
-    public class Car : EntityData
+    public class Car : CustomEntityData
     {
         public string Name { get; set; }
         public string Description { get; set; }

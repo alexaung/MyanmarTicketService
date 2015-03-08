@@ -10,7 +10,14 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <label for="name">From</label>
-                                    <input type="text" ng-model="criteria.FromCity" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:10" class="form-control" placeholder="Enter a city">
+                                    <div class="input-group">
+                                        <input type="text" ng-model="criteria.FromCity" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:10" class="form-control" placeholder="Enter a city">
+                                        <span class="input-group-btn">
+                                            <label class="btn btn-default form-control" for="toCity">
+                                                <i class="glyphicon glyphicon-list"></i>
+                                            </label>
+                                        </span>
+                                    </div>
                                     <!--<div class="input-group">
                                         <input type="text" ng-model="criteria.selectedFrom" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:8" class="form-control" placeholder="Enter a city">
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-th-list"></span></span>
@@ -21,11 +28,14 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <label for="name">To</label>
-                                    <input type="text" ng-model="criteria.ToCity" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:8" class="form-control" placeholder="Enter a city">
-                                    <!--<div class="input-group">
-                                        <input type="text" ng-model="criteria.selectedTo" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:8" class="form-control" placeholder="Enter a city">
-                                        <span class="input-group-addon"><span class="glyphicon glyphicon-th-list"></span></span>
-                                    </div>-->
+                                    <div class="input-group">
+                                        <input id="toCity" type="text" ng-model="criteria.ToCity" typeahead="city as city.name for city in cities | filter:$viewValue | limitTo:8" class="form-control" placeholder="Enter a city">
+                                        <span class="input-group-btn">
+                                            <label class="btn btn-default form-control" for="toCity">
+                                                <i class="glyphicon glyphicon-list"></i>
+                                            </label>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -35,9 +45,9 @@
                                 <div class="form-group">
                                     <label for="name">Date of Journey</label>
                                     <div class="input-group">
-                                        <input id="departDate" type="text" class="form-control" ng-model="criteria.DepartDate" data-date-format="dd-MMM-yyyy" data-date-type="number" data-min-date="today" data-max-date="{{criteria.DepartDate}}" placeholder="dd-MMM-yyyy" bs-datepicker>
+                                        <input id="departDate" type="text" class="form-control" ng-model="criteria.DepartDate" data-date-format="dd-MMM-yyyy" data-date-type="string" data-min-date="today" data-max-date="{{criteria.DepartDate}}" placeholder="dd-MMM-yyyy" bs-datepicker>
                                         <span class="input-group-btn">
-                                            <label class="btn btn-default" for="departDate">
+                                            <label class="btn btn-default form-control" for="departDate">
                                                 <i class="glyphicon glyphicon-calendar"></i>
                                             </label>
                                         </span>
@@ -48,9 +58,9 @@
                                 <div class="form-group">
                                     <label for="name">Date of Return (Optional)</label>                                    
                                     <div class="input-group">
-                                        <input id="returnDate" type="text" class="form-control" ng-model="criteria.ReturnDate" data-date-format="dd-MMM-yyyy" data-date-type="number" data-min-date="{{criteria.ReturnDate}}" placeholder="dd-MMM-yyyy" bs-datepicker>
+                                        <input id="returnDate" type="text" class="form-control" ng-model="criteria.ReturnDate" data-date-format="dd-MMM-yyyy" data-date-type="string" data-min-date="{{criteria.ReturnDate}}" placeholder="dd-MMM-yyyy" bs-datepicker>
                                         <span class="input-group-btn">
-                                            <label class="btn btn-default" for="returnDate">
+                                            <label class="btn btn-default form-control" for="returnDate">
                                                 <i class="glyphicon glyphicon-calendar"></i>
                                             </label>
                                         </span>
@@ -62,7 +72,7 @@
                         <div class="form-group row">
                             <div class="col-md-6 col-sm-6 col-xs-offset-3">
                                 <a href="#/bus/select" class="btn btn-block btn-info">
-                                    Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                    Search Buses <span class="glyphicon glyphicon-circle-arrow-right"></span>
                                 </a>
                             </div>
                         </div>

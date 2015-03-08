@@ -54,6 +54,6 @@ busApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 ////'https://myanmarticket.azure-mobile.net/',
 busApp.constant('AzureMobileServiceClient', {
-    API_URL: 'http://localhost:50770', 
+    API_URL: 'http://localhost:50770/',
     API_KEY: 'sCIAeXGjWNEZkskobCEsOuAKEZFsXs62'
 });

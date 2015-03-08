@@ -131,7 +131,7 @@ namespace myanmarticketService.Migrations
             context.BusStations.AddOrUpdate(bs => bs.Id,
                 new BusStation { Id = "FBC3CD07-5C71-4954-8EF7-F5865A3948D3", Name = "Aung Mingalar Bus Station" },
                 new BusStation { Id = "BA925A50-EC38-424E-9597-ABCB5F74F4D6", Name = " Monywa Highway Bus Station" }
-                
+
                 );
 
             context.ServiceProviders.AddOrUpdate(sp => sp.Id,
@@ -150,7 +150,7 @@ namespace myanmarticketService.Migrations
                     Seats = 10,
                     Fare = 13,
                     DayOfWeek = 127
-                }, 
+                },
                 new BusRoute
                 {
                     Id = "DAB6C4EE-6877-4606-BBB9-EB379B64D2F3",
@@ -179,3 +179,19 @@ namespace myanmarticketService.Migrations
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

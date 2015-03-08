@@ -216,13 +216,14 @@
     <Compile Include="DataObjects\BusTicket\State.cs" />
     <Compile Include="DataObjects\BusTicket\BusType.cs" />
     <Compile Include="DataObjects\Car.cs" />
+    <Compile Include="DataObjects\CustomEntityData.cs" />
     <Compile Include="DataObjects\Personal.cs" />
     <Compile Include="DataObjects\Security\RegistrationRequest.cs" />
     <Compile Include="DataObjects\Security\LoginRequest.cs" />
     <Compile Include="DataObjects\Transfer.cs" />
-    <Compile Include="Migrations\201503031615488_InitialCreate.cs" />
-    <Compile Include="Migrations\201503031615488_InitialCreate.Designer.cs">
-      <DependentUpon>201503031615488_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201503070954193_InitialCreate.cs" />
+    <Compile Include="Migrations\201503070954193_InitialCreate.Designer.cs">
+      <DependentUpon>201503070954193_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\myanmarticketContext.cs" />
@@ -258,8 +259,8 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201503031615488_InitialCreate.resx">
-      <DependentUpon>201503031615488_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201503070954193_InitialCreate.resx">
+      <DependentUpon>201503070954193_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

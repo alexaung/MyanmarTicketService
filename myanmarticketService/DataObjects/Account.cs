@@ -7,7 +7,7 @@ using Microsoft.WindowsAzure.Mobile.Service;
 
 namespace myanmarticketService.DataObjects
 {
-    public class Account : EntityData
+    public class Account : CustomEntityData
     {
         public string Username { get; set; }
         public string Email { get; set; }

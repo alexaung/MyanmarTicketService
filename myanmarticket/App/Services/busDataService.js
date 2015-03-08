@@ -1,6 +1,6 @@
 ﻿'use strict';
 busApp.factory("DataService", function () {
 
-    var criteria = { fromCity: "", toCity: "", departDate: "", returnDate: "" }
+    var criteria = { FromCity: "", ToCity: "", DepartDate: "", ReturnDate: "" }
     return { criteria: criteria };
 });

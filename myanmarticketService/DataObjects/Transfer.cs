@@ -4,7 +4,7 @@ using Microsoft.WindowsAzure.Mobile.Service;
 
 namespace myanmarticketService.DataObjects
 {
-    public class Transfer : EntityData
+    public class Transfer : CustomEntityData
     {
         public string Service { get; set; }
         public string FlightNo { get; set; }

@@ -2,18 +2,22 @@
 busApp.controller('busResultController', function ($scope, Azureservice, DataService) {
     // we will store all of our form data in this object
     $scope.criteria = DataService.criteria;
-
+    $scope.searchCriteria = { FromCity: $scope.criteria.FromCity.name, ToCity: $scope.criteria.ToCity.name, DepartDate: $scope.criteria.DepartDate, ReturnDate: $scope.criteria.ReturnDate }
+    $scope.buses =[];
     getBuses();
 
     function getBuses() {
         Azureservice.invokeApi('bus', {
             method: 'get',
-            body: null,
-            parameters: { FromCity: criteria.fromCity.name, ToCity: criteria.toCity.name, DepartDate: criteria.departDate, ReturnDate: criteria.returnDate }
+            body: 'Content-Type: "application/json; charset=UTF-8',
+            parameters: $scope.searchCriteria 
         })
         .then(function(response) {
             console.log('Here is my response object');
-            console.log(response)
+            console.log(response);
+            $scope.buses = response;
+            var bus = $scope.buses[0];
+
         }, function(err) {
             console.error('There was an error quering Azure ' + err);
         });

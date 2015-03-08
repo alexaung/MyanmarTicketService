@@ -1,18 +1,22 @@
 ﻿<label>What's Your Console of Choice?</label>
-<div class="form-group">
-    <div class="radio">
-        <label>
-            <input type="radio" ng-model="formData.type" value="xbox" checked>
-            I like XBOX
-        </label>
-    </div>
-    <div class="radio">
-        <label>
-            <input type="radio" ng-model="formData.type" value="ps">
-            I like PS4
-        </label>
-    </div>
-</div>
+<table class="table table-bordered">
+    
+    <tr ng-repeat="bus in buses">
+        <td class="tdCenter"><p><span class="glyphicons glyphicon-bus"></span></p><img ng-src="" alt="{{bus.busName}}" /></td /></td>
+        <td>
+            <a href="#/products/{{bus.busRouteId}}"><b>{{bus.busName}}</b></a><br />
+            {{bus.busName}}
+        </td>
+        
+        <td class="tdCenter">
+            <a href="">
+                add to cart
+            </a>
+        </td>
+    </tr>
+    
+</table>
+
 
 <div class="form-group row">
     <div class="col-xs-6 col-xs-offset-3">

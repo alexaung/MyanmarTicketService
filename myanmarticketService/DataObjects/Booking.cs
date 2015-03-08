@@ -5,7 +5,7 @@ using Microsoft.WindowsAzure.Mobile.Service;
 
 namespace myanmarticketService.DataObjects
 {
-    public class Booking : EntityData
+    public class Booking : CustomEntityData
     {
         public string Code { get; set; }
         public string BookingDate { get; set; }
